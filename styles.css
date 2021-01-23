@@ -1,6 +1,41 @@
 div {
   font-family: 'PT Serif', serif;
 }
+
 a, h1, p, button {
   font-family: 'Roboto', sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+  border: dashed 1px red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: dashed 1px red;
+}
+
+.logo {
+  margin-right: 63%;
+  padding: 40px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  padding: 0 13px;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
 }
