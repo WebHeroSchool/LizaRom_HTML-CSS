@@ -1,5 +1,17 @@
-a, h1, p, button {
-  font-family: 'Roboto', sans-serif;
+.nav__item {
+  font: 500 18px/21px 'Roboto', sans-serif;
+}
+
+.main-content__title {
+  font: bold 66px/87px 'Roboto', sans-serif;
+}
+
+.main-content__text {
+  font: normal 22px/26px 'Roboto', sans-serif;
+}
+
+.main-content__button {
+  font: 500 18px/21px 'Roboto', sans-serif;
 }
 
 .body {
@@ -9,20 +21,18 @@ a, h1, p, button {
 .wrapper {
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  border: dashed 1px red;
 }
 
 .logo {
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: 24px/32px 'PT Serif', serif;
+  font: bold 24px/32px 'PT Serif', serif;
 }
 
 .logo__circle {
