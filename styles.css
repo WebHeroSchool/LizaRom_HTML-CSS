@@ -1,6 +1,72 @@
-div {
-  font-family: 'PT Serif', serif;
+.nav__item {
+  font: 500 18px/21px 'Roboto', sans-serif;
 }
-a, h1, p, button {
-  font-family: 'Roboto', sans-serif;
+
+.main-content__title {
+  font: bold 66px/87px 'Roboto', sans-serif;
+}
+
+.main-content__text {
+  font: normal 22px/26px 'Roboto', sans-serif;
+}
+
+.main-content__button {
+  font: 500 18px/21px 'Roboto', sans-serif;
+}
+
+.body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  padding: 40px 0;
+  padding-left: 44px;
+  font: bold 24px/32px 'PT Serif', serif;
+}
+
+.logo__circle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.logo__circle_color_dark-blue {
+  background:  #0056EC;
+  opacity: .7;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+  opacity: .7;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  padding: 0 13px;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
 }
