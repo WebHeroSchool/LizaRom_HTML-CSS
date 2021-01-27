@@ -1,16 +1,4 @@
-.nav__item {
-  font: 500 18px/21px 'Roboto', sans-serif;
-}
-
-.main-content__title {
-  font: bold 66px/87px 'Roboto', sans-serif;
-}
-
-.main-content__text {
-  font: normal 22px/26px 'Roboto', sans-serif;
-}
-
-.main-content__button {
+.main__button {
   font: 500 18px/21px 'Roboto', sans-serif;
 }
 
@@ -24,6 +12,8 @@
 }
 
 .header {
+  margin-bottom: 133px;
+
   display: flex;
   justify-content: space-between;
 }
@@ -32,7 +22,7 @@
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/32px 'PT Serif', serif;
+  font: 700 24px/32px 'PT Serif', serif;
 }
 
 .logo__circle {
@@ -48,14 +38,14 @@
 
 .logo__circle_color_dark-blue {
   background:  #0056EC;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .logo__circle_color_blue {
   left: 8px;
   top: 56%;
   background: #C8DBFB;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .nav {
@@ -64,9 +54,84 @@
 }
 
 .nav__item {
-  padding: 0 13px;
+  position: relative;
+  margin-right: 26px;
+
+  font: 500 18px/21px 'Roboto', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.nav__item::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.5s;
 }
 
 .nav__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
+}
+
+.nav__item:hover {
+  opacity: 0.5;
+}
+
+.nav__item:hover::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+  left: 0;
+}
+
+.nav__item:hover::after, .nav__item_active::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.main {
+  padding: 0 63% 1080px 0;
+
+  background: url(images/pict.svg) no-repeat top right;
+}
+
+.main__title {
+  font: bold 66px/87px 'PT Serif', sans-serif;
+
+  margin: 0 0 40px 0;
+  padding-top: 73px;
+}
+
+.main__title-text_highlight {
+  background: #ECF3FF;
+}
+
+.main__text {
+  font: normal 22px/26px 'Roboto', sans-serif;
+
+  margin: 0 0 41px 0;
+  width: 81%;
+}
+
+.main__button {
+  display: inline-block;
+  padding: 18px 21px;
+
+  color: white;
+  background: #0056EC;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.5s;
+}
+
+.main__button:hover {
+  opacity: 0.5;
 }
