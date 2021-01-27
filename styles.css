@@ -12,7 +12,7 @@
 }
 
 .header {
-  margin-bottom: 206px;
+  margin-bottom: 133px;
 
   display: flex;
   justify-content: space-between;
@@ -98,15 +98,16 @@
 }
 
 .main {
-  padding: 0 63% 100% 0;
+  padding: 0 63% 1080px 0;
 
   background: url(images/pict.svg) no-repeat top right;
 }
 
 .main__title {
-  font: bold 66px/87px 'Roboto', sans-serif;
+  font: bold 66px/87px 'PT Serif', sans-serif;
 
   margin: 0 0 40px 0;
+  padding-top: 73px;
 }
 
 .main__title-text_highlight {
