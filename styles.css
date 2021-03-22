@@ -155,6 +155,9 @@ body {
 }
 
 @keyframes main__button {
+  from {
+    transform: rotate(-3deg);
+  }
   to {
     transform: rotate(3deg);
   }
