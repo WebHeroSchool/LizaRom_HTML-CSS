@@ -16,8 +16,7 @@ body {
 
 .logo {
   position: relative;
-  padding: 40px 0;
-  padding-left: 48px;
+  padding: 40px 0 40px 48px;
 }
 
 .logo__text {
@@ -28,7 +27,6 @@ body {
   position: absolute;
   width: 28px;
   height: 28px;
-  top: 0;
   left: 4px;
   top: 50%;
   transform: translateY(-50%);
@@ -183,7 +181,7 @@ body {
   }
 
   .logo__circle {
-      left: -2px;
+    left: -2px;
   }
 
   .logo__circle_color_blue {
@@ -243,7 +241,7 @@ body {
   }
 
   .logo__circle {
-      left: -2px;
+    left: -2px;
   }
 
   .logo__circle_color_blue {
@@ -304,7 +302,7 @@ body {
   }
 
   .logo__circle {
-      left: 1px;
+    left: 1px;
   }
 
   .logo__circle_color_blue {
@@ -369,7 +367,7 @@ body {
   }
 
   .logo__circle {
-      left: 6px;
+    left: 6px;
   }
 
   .logo__circle_color_blue {
@@ -516,7 +514,7 @@ body {
   }
 
   .logo__circle {
-      left: 6px;
+    left: 6px;
   }
 
   .logo__circle_color_blue {
@@ -664,7 +662,7 @@ body {
   }
 
   .logo__circle {
-      left: 6px;
+    left: 6px;
   }
 
   .logo__circle_color_blue {
