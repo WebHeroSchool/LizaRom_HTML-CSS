@@ -16,8 +16,7 @@ body {
 
 .logo {
   position: relative;
-  padding: 40px 0;
-  padding-left: 48px;
+  padding: 40px 0 40px 48px;
 }
 
 .logo__text {
@@ -28,7 +27,6 @@ body {
   position: absolute;
   width: 28px;
   height: 28px;
-  top: 0;
   left: 4px;
   top: 50%;
   transform: translateY(-50%);
@@ -135,10 +133,8 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: opacity 0.5s;
-}
 
-.main__button:hover {
-  opacity: 0.5;
+  animation: main__button 3s alternate infinite;
 }
 
 .footer {
@@ -156,6 +152,20 @@ body {
   border-radius: 50%;
 }
 
+@keyframes main__button {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+
+.main__button:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
 @media (max-width: 1744px) {
   .wrapper {
     width: 69%;
@@ -171,7 +181,7 @@ body {
   }
 
   .logo__circle {
-      left: -2px;
+    left: -2px;
   }
 
   .logo__circle_color_blue {
@@ -231,7 +241,7 @@ body {
   }
 
   .logo__circle {
-      left: -2px;
+    left: -2px;
   }
 
   .logo__circle_color_blue {
@@ -292,7 +302,7 @@ body {
   }
 
   .logo__circle {
-      left: 1px;
+    left: 1px;
   }
 
   .logo__circle_color_blue {
@@ -357,7 +367,7 @@ body {
   }
 
   .logo__circle {
-      left: 6px;
+    left: 6px;
   }
 
   .logo__circle_color_blue {
@@ -504,7 +514,7 @@ body {
   }
 
   .logo__circle {
-      left: 6px;
+    left: 6px;
   }
 
   .logo__circle_color_blue {
@@ -652,7 +662,7 @@ body {
   }
 
   .logo__circle {
-      left: 6px;
+    left: 6px;
   }
 
   .logo__circle_color_blue {
